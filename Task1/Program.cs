@@ -29,15 +29,15 @@ namespace Task1
             }
             catch (ArgumentNullException ex)
             {
-                Console.WriteLine(ex.GetType());
+                Console.WriteLine(ex.Message);
             }
             catch (RankException ex)
             {
-                Console.WriteLine(ex.Source);
+                Console.WriteLine(ex.Message);
             }
             catch (DivideByZeroException ex)
             {
-                Console.WriteLine(ex.GetType());
+                Console.WriteLine(ex.Message);
             }
             catch (InvalidOperationException ex)
             {
@@ -45,7 +45,7 @@ namespace Task1
             }
             catch (NotImplementedException ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.Message);
             }
             finally
             {
